@@ -2,13 +2,20 @@ from turtle import *
 from time import *
 from random import *
 speed(0)
+colormode(255)
 for i in range(360):
-    r=randint(0, 255)
-    g=randint(0, 255)
-    b=randint(0, 255)
-    pencolor((r, g, b))
+    # r=randint(0, 255)
+    # g=randint(0, 255)
+    # b=randint(0, 255)
+    # # pencolor((r, g, b))
+    # bgcolor((r, g, b))
     forward(100)
     for i in range(3):
+        r=randint(0, 255)
+        g=randint(0, 255)
+        b=randint(0, 255)
+        # pencolor((r, g, b))
+        bgcolor((r, g, b))
         backward(25)
         right(45)
         forward(20)
